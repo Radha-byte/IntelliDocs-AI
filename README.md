@@ -1,6 +1,8 @@
 <div align="center">
 
-### Intelligent Enterprise Document Intelligence Platform
+# 🧠 IntelliDocs AI
+
+### Enterprise Retrieval-Augmented Generation (RAG) Platform for Intelligent Document Search & Question Answering
 
 Semantic Search • Retrieval-Augmented Generation • Google Gemini • ChromaDB
 
@@ -64,11 +66,33 @@ Upload PDF documents, build a semantic knowledge base, retrieve relevant informa
 > Add screenshots here after uploading them.
 
 ```
-assets/dashboard.png
+<p align="center">
+<img src="assets/chatbot1.png" width="95%">
+</p>
 
-assets/chat.png
+<p align="center">
+<img src="assets/chatbot2.png" width="95%">
+</p>
 
-assets/upload.png
+<p align="center">
+<img src="assets/chatbot3.png" width="95%">
+</p>
+
+<p align="center">
+<img src="assets/chatbot4.png" width="95%">
+</p>
+
+<p align="center">
+<img src="assets/chatbot5.png" width="95%">
+</p>
+
+<p align="center">
+<img src="assets/chatbot6.png" width="95%">
+</p>
+
+<p align="center">
+<img src="assets/chatbot7.png" width="95%">
+</p>
 ```
 
 ---
