@@ -61,34 +61,57 @@ Upload PDF documents, build a semantic knowledge base, retrieve relevant informa
 
 ---
 
-# 🖥 Dashboard Preview
+# 🖥 Application Preview
 
-> Add screenshots here after uploading them.
+## 🏠 Dashboard
 
-```
 <p align="center">
 <img src="assets/chatbot1.png" width="95%">
 </p>
+
+---
+
+## 📂 Workspace Analytics
 
 <p align="center">
 <img src="assets/chatbot2.png" width="95%">
 </p>
 
+---
+
+## 📄 Knowledge Workspace
+
 <p align="center">
 <img src="assets/chatbot3.png" width="95%">
 </p>
+
+---
+
+## ⚡ Document Upload
 
 <p align="center">
 <img src="assets/chatbot4.png" width="95%">
 </p>
 
+---
+
+## 💬 AI Conversation
+
 <p align="center">
 <img src="assets/chatbot5.png" width="95%">
 </p>
 
+---
+
+## 📚 Knowledge Base Builder
+
 <p align="center">
 <img src="assets/chatbot6.png" width="95%">
 </p>
+
+---
+
+## 📊 Conversation Workspace
 
 <p align="center">
 <img src="assets/chatbot7.png" width="95%">
@@ -100,7 +123,7 @@ Upload PDF documents, build a semantic knowledge base, retrieve relevant informa
 # 🏗 System Architecture
 
 ```
-                                   +----------------------+
+               +----------------------+
                     |   PDF Documents      |
                     +----------+-----------+
                                |
