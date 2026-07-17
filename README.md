@@ -312,14 +312,6 @@ streamlit run app.py
 
 ---
 
-# 📸 Screenshots
-
-| Dashboard | Upload | Chat |
-|------------|---------|------|
-| Add Screenshot | Add Screenshot | Add Screenshot |
-
----
-
 # 👨‍💻 Developed By
 
 **Radha Rani**
