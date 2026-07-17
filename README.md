@@ -66,7 +66,7 @@ Upload PDF documents, build a semantic knowledge base, retrieve relevant informa
 ## 🏠 Dashboard
 
 <p align="center">
-<img src="assets/chatbot1.png" width="95%">
+<img src="assets/Chatbot1.png" width="95%">
 </p>
 
 ---
@@ -123,7 +123,7 @@ Upload PDF documents, build a semantic knowledge base, retrieve relevant informa
 # 🏗 System Architecture
 
 ```
-               +----------------------+
+                    +----------------------+
                     |   PDF Documents      |
                     +----------+-----------+
                                |
