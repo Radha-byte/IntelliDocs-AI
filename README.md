@@ -1,92 +1,286 @@
-# Document Knowledge Base — Local RAG Assistant
+<div align="center">
 
-A clean, production-grade Retrieval-Augmented Generation (RAG) chatbot designed to ingest, index, and query dense PDF documents natively. The system relies on LangChain for pipeline architecture, Google Gemini for semantic embeddings and text synthesis, and ChromaDB for local vector storage.
+# 🧠 IntelliDocs AI
 
-**Author:** Akshat Garg  
-**Registration Number:** 23BCE10641  
+### Enterprise Retrieval-Augmented Generation (RAG) Platform for Intelligent Document Search & Question Answering
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python"/>
+
+<img src="https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit"/>
+
+<img src="https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google"/>
+
+<img src="https://img.shields.io/badge/LangChain-RAG-green?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/ChromaDB-Vector_Database-orange?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge"/>
+
+</p>
 
 ---
 
-## Key Features
+### 🚀 AI-Powered Enterprise Knowledge Assistant
 
-* **Paced Ingestion Pipeline:** Self-throttling ingestion mechanism with automated backoff logic to safely stay within free-tier API Rate Limits (RPM).
-* **Persistent Local Storage:** Contextual segments are vectorized and cached locally in an optimized Chroma DB structure to prevent redundant API calls.
-* **Stateful UI Interface:** Seamless chat interface built with Streamlit, preserving active session states and message history.
-* **Context Optimization:** Fine-tuned token character splitting ($1000$ chunk size, $150$ overlap) paired with an expanded retrieval window ($k=6$) to minimize text fragmentation and eliminate hallucinations.
+Upload PDF documents, build a semantic knowledge base, retrieve relevant information using vector search, and generate context-aware answers with Google Gemini.
+
+</div>
 
 ---
 
-## Directory Architecture
+# ✨ Features
+
+✅ Enterprise-inspired modern dashboard
+
+✅ Upload PDF documents
+
+✅ Automatic knowledge base generation
+
+✅ Semantic chunking & embeddings
+
+✅ Chroma Vector Database
+
+✅ Context-aware Retrieval-Augmented Generation (RAG)
+
+✅ Google Gemini integration
+
+✅ AI-powered conversational interface
+
+✅ Source chunk visualization
+
+✅ Persistent local vector storage
+
+✅ Responsive professional UI
+
+---
+
+# 🖥 Dashboard Preview
+
+> Add screenshots here after uploading them.
+
+```
+assets/dashboard.png
+
+assets/chat.png
+
+assets/upload.png
+```
+
+---
+
+# 🏗 System Architecture
+
+```
+                 PDF Documents
+                       │
+                       ▼
+             Document Loader
+                       │
+                       ▼
+              Text Chunking
+                       │
+                       ▼
+         Gemini Embedding Model
+                       │
+                       ▼
+                Chroma Vector DB
+                       │
+        Semantic Similarity Search
+                       │
+                       ▼
+           Retrieved Context Chunks
+                       │
+                       ▼
+             Gemini 2.5 Flash LLM
+                       │
+                       ▼
+             Intelligent Response
+```
+
+---
+
+# 📁 Project Structure
 
 ```text
-├── data/               # Source PDFs go here for processing
-├── .chroma_db/         # Generated persistent vector store database
-├── .env                # Local environmental secrets
-├── .gitignore          # Git exclusion framework
-├── requirements.txt    # Application dependencies
-├── ingest.py           # Document chunking & vector ingestion pipeline
-└── app.py              # Stateful Streamlit application code
-
+IntelliDocs-AI
+│
+├── app.py
+├── ingest.py
+├── requirements.txt
+├── .env
+│
+├── data/
+│      sample.pdf
+│
+├── .chroma_db/
+│
+├── assets/
+│      dashboard.png
+│      upload.png
+│      chat.png
+│
+└── README.md
 ```
 
 ---
 
-## Installation & Environment Configuration
+# ⚙ Tech Stack
 
-### 1. Environment Isolation
+| Technology | Purpose |
+|------------|----------|
+| Python | Backend |
+| Streamlit | Frontend |
+| LangChain | RAG Pipeline |
+| Google Gemini | Large Language Model |
+| Gemini Embeddings | Text Embeddings |
+| ChromaDB | Vector Database |
+| PyPDF | PDF Processing |
+| dotenv | Environment Variables |
 
-Set up an isolated environment using `conda` to maintain dependency integrity:
+---
+
+# 🚀 Installation
+
+Clone the repository
 
 ```bash
-# Create the environment
-conda create -n rag-bot python=3.11 -y
-
-# Activate the workspace
-conda activate rag-bot
-
+git clone https://github.com/YOUR_USERNAME/IntelliDocs-AI.git
 ```
 
-### 2. Dependency Resolution
+Go inside the project
 
-Install the required architectural packages compiled in `requirements.txt`:
+```bash
+cd IntelliDocs-AI
+```
+
+Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate environment
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
-
-```
-
-### 3. Environment Secrets Setup
-
-Create a `.env` file in the root project directory and provide your API configuration:
-
-```env
-GEMINI_API_KEY=your_actual_gemini_api_key_here
-
 ```
 
 ---
 
-## Practical Execution Flow
+# 🔑 Environment Variables
 
-### Step 1: Ingesting Target Documents
+Create a `.env` file
 
-1. Drop your sample PDF or text documentation directly inside the `data/` directory.
-2. Fire up the paced indexing pipeline from your terminal:
-
-```bash
-python ingest.py
-
+```env
+GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-The script will track reading progress, map out distinct text chunks, compute semantic embedding vectors via `gemini-embedding-001`, and save them down inside the local storage bucket (`.chroma_db/`).
+---
 
-### Step 2: Launching the Interaction Interface
-
-Once the data ingestion routine signals a success, boot up the main application:
+# ▶ Run the Application
 
 ```bash
 streamlit run app.py
-
 ```
 
-Your local browser environment will spin up a fresh tab at `http://localhost:8501`. You can now dynamically converse with your underlying document base.
+---
+
+# 📚 How It Works
+
+1. Upload a PDF document
+
+2. Document is split into semantic chunks
+
+3. Gemini Embedding Model converts chunks into vectors
+
+4. ChromaDB stores vector embeddings
+
+5. User submits a query
+
+6. Semantic Search retrieves the most relevant chunks
+
+7. Gemini generates an answer using retrieved context
+
+8. Source chunks are displayed for transparency
+
+---
+
+# 💡 Key Capabilities
+
+- Enterprise document search
+- AI-powered knowledge retrieval
+- Semantic similarity search
+- Retrieval-Augmented Generation (RAG)
+- Interactive conversational assistant
+- Persistent knowledge base
+- Professional dashboard
+
+---
+
+# 📈 Future Improvements
+
+- Multi-document support
+
+- Chat history persistence
+
+- Authentication
+
+- User workspaces
+
+- Multiple vector databases
+
+- Cloud deployment
+
+- Citation highlighting
+
+- OCR support
+
+- Drag & Drop upload
+
+- Multiple LLM providers
+
+---
+
+# 📸 Screenshots
+
+| Dashboard | Upload | Chat |
+|------------|---------|------|
+| Add Screenshot | Add Screenshot | Add Screenshot |
+
+---
+
+# 👨‍💻 Developed By
+
+**Hare Krishna**
+
+Computer Science Undergraduate
+
+AI • Machine Learning • Full Stack Development
+
+---
+
+# ⭐ If you found this project useful
+
+Please consider giving the repository a ⭐
+
+It motivates further development.
+
+---
+
+<div align="center">
+
+Made with ❤️ using
+
+**Python • Streamlit • LangChain • Gemini AI • ChromaDB**
+
+</div>

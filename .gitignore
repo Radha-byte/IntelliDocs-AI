@@ -1,9 +1,31 @@
-# Secrets
+# Virtual Environment
+venv/
+
+# Environment Variables
 .env
 
-# Python environment artifacts
+# Python Cache
 __pycache__/
 *.pyc
+*.pyo
+
+# Chroma Database
+.chroma_db/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Mac
 .DS_Store
 
-# .chroma_db/
+# Uploaded PDFs
+data/*.pdf
+
+# Temporary files
+*.tmp
