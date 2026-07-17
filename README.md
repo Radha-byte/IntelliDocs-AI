@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🧠 IntelliDocs AI
+### Intelligent Enterprise Document Intelligence Platform
 
-### Enterprise Retrieval-Augmented Generation (RAG) Platform for Intelligent Document Search & Question Answering
+Semantic Search • Retrieval-Augmented Generation • Google Gemini • ChromaDB
 
 <p align="center">
 
@@ -30,29 +30,32 @@ Upload PDF documents, build a semantic knowledge base, retrieve relevant informa
 
 ---
 
-# ✨ Features
+## 📊 Project Highlights
 
-✅ Enterprise-inspired modern dashboard
+| Metric | Value |
+|---------|------:|
+| Python Files | 2 |
+| AI Model | Gemini 2.5 Flash |
+| Embedding Model | Gemini Embedding |
+| Vector Database | ChromaDB |
+| Framework | LangChain |
+| UI | Streamlit |
+| Retrieval | Semantic Search |
+| Architecture | Retrieval-Augmented Generation |
 
-✅ Upload PDF documents
 
-✅ Automatic knowledge base generation
+## ✨ Features
 
-✅ Semantic chunking & embeddings
-
-✅ Chroma Vector Database
-
-✅ Context-aware Retrieval-Augmented Generation (RAG)
-
-✅ Google Gemini integration
-
-✅ AI-powered conversational interface
-
-✅ Source chunk visualization
-
-✅ Persistent local vector storage
-
-✅ Responsive professional UI
+| Feature | Description |
+|---------|-------------|
+| 📄 PDF Upload | Upload enterprise documents |
+| 🧠 Semantic Embeddings | Gemini Embedding Model |
+| ⚡ Vector Search | Chroma similarity retrieval |
+| 🤖 AI Chat | Gemini-powered responses |
+| 📚 Source Retrieval | Displays retrieved chunks |
+| 💾 Persistent Storage | Local Chroma Database |
+| 🎨 Modern Dashboard | Enterprise-inspired UI |
+| 🚀 Fast Response | Optimized retrieval pipeline |
 
 ---
 
@@ -73,30 +76,41 @@ assets/upload.png
 # 🏗 System Architecture
 
 ```
-                 PDF Documents
-                       │
-                       ▼
-             Document Loader
-                       │
-                       ▼
-              Text Chunking
-                       │
-                       ▼
-         Gemini Embedding Model
-                       │
-                       ▼
-                Chroma Vector DB
-                       │
-        Semantic Similarity Search
-                       │
-                       ▼
-           Retrieved Context Chunks
-                       │
-                       ▼
-             Gemini 2.5 Flash LLM
-                       │
-                       ▼
-             Intelligent Response
+                                   +----------------------+
+                    |   PDF Documents      |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Document Loader      |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Text Chunking        |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Gemini Embeddings    |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Chroma Vector DB     |
+                    +----------+-----------+
+                               |
+                     Semantic Retrieval
+                               |
+                               v
+                    +----------------------+
+                    | Gemini 2.5 Flash LLM |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | Intelligent Answer   |
+                    +----------------------+
 ```
 
 ---
@@ -261,13 +275,17 @@ streamlit run app.py
 
 # 👨‍💻 Developed By
 
-**Hare Krishna**
+**Radha Rani**
 
 Computer Science Undergraduate
 
 AI • Machine Learning • Full Stack Development
 
 ---
+
+## 📄 License
+
+This project is released under the MIT License.
 
 # ⭐ If you found this project useful
 
@@ -277,6 +295,7 @@ It motivates further development.
 
 ---
 
+
 <div align="center">
 
 Made with ❤️ using
@@ -284,3 +303,5 @@ Made with ❤️ using
 **Python • Streamlit • LangChain • Gemini AI • ChromaDB**
 
 </div>
+
+
