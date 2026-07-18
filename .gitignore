@@ -1,32 +1,17 @@
-# Virtual Environment
+# Environment
 venv/
-env/
-
-# Environment Variables
 .env
 
-# Python Cache
-__pycache__/
-*.pyc
-*.pyo
-
-# Chroma Database
+# Vector database
 .chroma_db/
 
-# Logs
-*.log
+# Python cache
+__pycache__/
+*.pyc
 
-# VS Code
-.vscode/
+# Streamlit
+.streamlit/
 
-# PyCharm
-.idea/
-
-# Mac
+# OS files
 .DS_Store
-
-# Uploaded PDFs
-data/*.pdf
-
-# Temporary files
-*.tmp
+Thumbs.db
